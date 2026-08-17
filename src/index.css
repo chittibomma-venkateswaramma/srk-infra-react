@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+/* =========================
+   PROJECTS PAGE
+========================= */
+
+.projects-page {
+  background: #ffffff;
+}
+
+/* HERO */
+
+.projects-hero {
+  height: 680px;
+  background-image: url("/construction.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.projects-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 20, 70, 0.95),
+    rgba(5, 20, 70, 0.65),
+    rgba(5, 20, 70, 0.25)
+  );
+  display: flex;
+  align-items: center;
+}
+
+.projects-hero-content {
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+  color: white;
+}
+
+.projects-hero-content h1 {
+  font-size: 72px;
+  line-height: 1.05;
+  margin: 20px 0;
+  font-weight: 800;
+}
+
+.projects-hero-content p:last-child {
+  max-width: 700px;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+
+/* INTRO */
+
+.projects-intro {
+  max-width: 1200px;
+  margin: auto;
+  padding: 120px 0 70px;
+}
+
+.projects-intro h2 {
+  color: #0b1b67;
+  font-size: 58px;
+  line-height: 1.05;
+  margin: 20px 0 30px;
+}
+
+.projects-description {
+  max-width: 750px;
+  color: #596273;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+
+/* GRID */
+
+.projects-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #dfe3eb;
+}
+
+.project-card {
+  position: relative;
+  border-right: 1px solid #dfe3eb;
+  border-bottom: 1px solid #dfe3eb;
+  background: white;
+}
+
+.project-number {
+  color: #16a8df;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 30px 35px 15px;
+}
+
+.project-image {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-image-one {
+  background-image: url("/project1.jpg");
+}
+
+.project-image-two {
+  background-image: url("/project2.jpg");
+}
+
+.project-image-three {
+  background-image: url("/project3.jpg");
+}
+
+.project-image-four {
+  background-image: url("/project4.jpg");
+}
+
+.project-content {
+  padding: 35px;
+}
+
+.project-content > span {
+  color: #159fd6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.project-content h3 {
+  color: #0b1b67;
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.project-content p {
+  color: #596273;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e3e6ec;
+  margin-top: 25px;
+  padding-top: 20px;
+  color: #596273;
+}
+
+.project-meta strong {
+  color: #0b1b67;
+}
+
+.project-status {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 15px;
+  background: #0b1b67;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.project-status.completed {
+  background: #16a8df;
+}
+
+
+/* CTA */
+
+.projects-cta {
+  margin-top: 120px;
+  padding: 90px max(8%, calc((100vw - 1200px) / 2));
+  background: #0b1b67;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-cta h2 {
+  font-size: 58px;
+  line-height: 1.05;
+  margin-top: 15px;
+}
+
+.projects-cta .section-label {
+  color: #16a8df;
+}
+
+.projects-cta .primary-btn {
+  background: #16a8df;
+  color: white;
+  padding: 18px 35px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .projects-hero {
+    height: 550px;
+  }
+
+  .projects-hero-content h1 {
+    font-size: 45px;
+  }
+
+  .projects-intro {
+    padding: 80px 25px 50px;
+  }
+
+  .projects-intro h2 {
+    font-size: 42px;
+  }
+
+  .projects-grid {
+    margin: 0 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .project-content h3 {
+    font-size: 26px;
+  }
+
+  .projects-cta {
+    padding: 70px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  .projects-cta h2 {
+    font-size: 42px;
+  }
+}

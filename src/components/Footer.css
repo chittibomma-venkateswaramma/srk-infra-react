@@ -1,0 +1,326 @@
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+  width: 100%;
+  background: #07145c;
+  color: white;
+
+  padding-top: 80px;
+}
+
+
+/* ================================
+   FOOTER CONTAINER
+================================ */
+
+.footer-container {
+  width: 80%;
+  max-width: 1300px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1fr
+    1.2fr;
+
+  gap: 60px;
+
+  padding-bottom: 60px;
+}
+
+
+/* ================================
+   COMPANY
+================================ */
+
+.footer-company {
+  max-width: 400px;
+}
+
+
+/* ================================
+   FOOTER LOGO
+================================ */
+
+.footer-logo {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 25px;
+
+  text-decoration: none;
+
+  color: white;
+}
+
+
+.footer-logo-main {
+  font-size: 48px;
+
+  font-weight: 900;
+
+  color: #16a9df;
+
+  letter-spacing: -3px;
+
+  line-height: 1;
+}
+
+
+/* ================================
+   LOGO DETAILS
+================================ */
+
+.footer-logo-details {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.footer-logo-details strong {
+  display: block;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+
+.footer-logo-details span {
+  display: block;
+
+  color: #b9c0d8;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  margin-top: 4px;
+}
+
+
+/* ================================
+   COMPANY DESCRIPTION
+================================ */
+
+.footer-company > p {
+  color: #c8cee3;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  margin: 0;
+
+  max-width: 400px;
+}
+
+
+/* ================================
+   FOOTER COLUMNS
+================================ */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+/* ================================
+   COLUMN HEADINGS
+================================ */
+
+.footer-column h3 {
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #18a9df;
+
+  letter-spacing: 2px;
+
+  margin: 0 0 12px;
+}
+
+
+/* ================================
+   FOOTER LINKS
+================================ */
+
+.footer-column a {
+  color: #d8dced;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.footer-column a:hover {
+  color: #18a9df;
+
+  transform: translateX(4px);
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.footer-contact p {
+  color: #d8dced;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  margin: 0 0 8px;
+}
+
+
+.footer-contact a {
+  color: #d8dced;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+
+.footer-contact a:hover {
+  color: #18a9df;
+
+  transform: translateX(4px);
+}
+
+
+/* ================================
+   FOOTER BOTTOM
+================================ */
+
+.footer-bottom {
+  width: 80%;
+
+  max-width: 1300px;
+
+  margin: 0 auto;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.15);
+
+  padding: 25px 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #aeb6d0;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+  .footer-container {
+    grid-template-columns:
+      1fr
+      1fr;
+
+    gap: 45px;
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding-top: 60px;
+  }
+
+
+  .footer-container {
+    width: 88%;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    padding-bottom: 45px;
+  }
+
+
+  .footer-company {
+    max-width: 100%;
+  }
+
+
+  .footer-logo-main {
+    font-size: 42px;
+  }
+
+
+  .footer-bottom {
+    width: 88%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 22px 0;
+  }
+
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+
+}
