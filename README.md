@@ -1,16 +1,143 @@
-# React + Vite
+# SRK Infra Developers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern website developed for **Sri Radha Krishna Infra Developers** to showcase residential, commercial, infrastructure, and villa development services.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+SRK Infra Developers is a professional real-estate and infrastructure website built using **React.js and Vite**.
 
-## React Compiler
+The website provides information about the company, services, projects, and contact details through a clean and modern user interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+* Professional Home page
+* About Us page
+* Services page
+* Projects showcase
+* Contact Us page
+* Contact form using Formspree
+* React Router navigation
+* Reusable Navbar and Footer components
+* Project and hero images
+* CSS hover effects
+* Responsive layouts
+* Production-ready Vite build
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Pages
+
+* **Home** – Company introduction and hero section
+* **About Us** – Company information, values and experience
+* **Services** – Development and infrastructure services
+* **Projects** – Project showcase
+* **Contact Us** – Contact information and enquiry form
+
+## Technologies Used
+
+* React.js
+* JavaScript
+* JSX
+* HTML5
+* CSS3
+* React Router DOM
+* Vite
+* npm
+* Formspree
+* Git
+* GitHub
+
+## Project Structure
+
+```text
+srk-infra-react/
+│
+├── public/
+│   ├── construction.jpg
+│   ├── contact-hero.jpg
+│   ├── project1.jpg
+│   ├── project2.jpg
+│   ├── project3.jpg
+│   └── project4.jpg
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   └── Button.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Services.jsx
+│   │   ├── Projects.jsx
+│   │   └── Contact.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Contact Form
+
+The Contact Us form uses **Formspree** to handle enquiries.
+
+Form endpoint:
+
+`https://formspree.io/f/mzepjrge`
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/chittibomma-venkateswaramma/srk-infra-react.git
+```
+
+Go to the project folder:
+
+```bash
+cd srk-infra-react
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application runs locally at:
+
+```text
+http://localhost:5173
+```
+
+## Production Build
+
+Create a production build using:
+
+```bash
+npm run build
+```
+
+The production files are generated inside the `dist` folder.
+
+## Author
+
+**Chittibomma Venkateswaramma**
+
+GitHub:
+https://github.com/chittibomma-venkateswaramma
+
+## Project Status
+
+**Completed and ready for deployment.**
